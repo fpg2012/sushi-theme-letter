@@ -1,0 +1,8 @@
+site_name: "Letter"
+author: "nth233"
+#url: "http://127.0.0.1:5000"
+
+convert_ext: ["html", "md"]
+converter_choice:
+  "md": "convert.sh"
+taxonomies: ["category", "tag"]

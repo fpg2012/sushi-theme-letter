@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        {% if page.title %}
+        <title>{{ site.site_name | append: " - " | append: page.title }}</title>
+        {% else %}
+        <title>{{ site.site_name }}</title>
+        {% endif %}
+        <meta charset="UTF-8">
+        <meta content="width=device-width, initial-scale=1, viewport-fit=cover" name="viewport">
+        <link rel="stylesheet" href="/assets/style/main.css">
+        <link rel="stylesheet" href="/assets/style/tango.css">
+        {% include "katexcss" %}
+    </head>
+    <body>
+        {% include "header" %}
+        <main>
+            {{ content }}
+        </main>
+        {% include "footer" %}
+        <div id="fullscreen-img-container" class="hidden">
+        </div>
+        <script src="/assets/js/fullscreen-img.js"></script>
+    </body>
+</html>
