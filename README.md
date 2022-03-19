@@ -3,6 +3,8 @@ Theme written for sushi. Intended for Linux users. Tested on Arch Linux.
 
 ![screenshot](screenshot.png)
 
+[Sample](https://fpg2012.github.io/sushi-theme-letter)
+
 ## dependencies
 
 1. pandoc
@@ -11,6 +13,6 @@ Theme written for sushi. Intended for Linux users. Tested on Arch Linux.
 ## some pandoc filters
 
 - `pandoc-katex` is from https://github.com/xu-cheng/pandoc-katex for serverside katex rendering
-- pandocfilter-pygments is from https://github.com/DoomHammer/pandocfilter-pygments for better code highlight
+- `pandocfilter-pygments.py` is from https://github.com/DoomHammer/pandocfilter-pygments for better code highlight
 
 If you don't need these filters, you can just simply delete them, and remove them from converter.sh
