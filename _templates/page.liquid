@@ -9,8 +9,8 @@
         {% endif %}
         <meta charset="UTF-8">
         <meta content="width=device-width, initial-scale=1, viewport-fit=cover" name="viewport">
-        <link rel="stylesheet" href="/assets/style/main.css">
-        <link rel="stylesheet" href="/assets/style/tango.css">
+	<link rel="stylesheet" href="{{ "/assets/style/main.css" | prepend: site.url }}">
+	<link rel="stylesheet" href="{{ "/assets/style/tango.css" | prepend: site.url }}">
         {% include "katexcss" %}
     </head>
     <body>
@@ -21,6 +21,6 @@
         {% include "footer" %}
         <div id="fullscreen-img-container" class="hidden">
         </div>
-        <script src="/assets/js/fullscreen-img.js"></script>
+	<script src="{{ "/assets/js/fullscreen-img.js" | prepend: site.url }}"></script>
     </body>
 </html>

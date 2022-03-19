@@ -1,6 +1,6 @@
 site_name: "Letter"
 author: "nth233"
-#url: "http://127.0.0.1:5000"
+url: "//fpg2012.github.io/sushi-theme-letter"
 
 convert_ext: ["html", "md"]
 converter_choice:
