@@ -1,1 +1,14 @@
-<header><a href="{{ "/" | prepend: site.url }}">{{ site.site_name }}</a></header>
+<header>
+
+<div class="header-logo">
+    <a href="{{ "/" | prepend: site.url }}">{{ site.site_name }}</a>
+</div>
+
+<div class="header-menu">
+    <a href="{{ "/about/" | prepend: site.url }}">About</a>
+    <a href="{{ "/feed.xml" | prepend: site.url }}">RSS</a>
+    <!--<a href="{{ "/friends.html" | prepend: site.url }}">Friends</a>-->
+    <button id="theme-switch">🅣 theme</button>
+</div>
+
+</header>

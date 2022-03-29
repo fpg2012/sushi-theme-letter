@@ -2,6 +2,14 @@ html {
     font-size: 15px;
 }
 
+html.dark-theme {
+    filter: invert(1) hue-rotate(180deg);
+}
+
+html.dark-theme img {
+    filter: brightness(0.7) invert(1) hue-rotate(180deg);
+}
+
 a {
     text-decoration: none;
     color: rgb(70, 104, 165);
@@ -32,9 +40,36 @@ header {
     backdrop-filter: blur(4px);
     background: rgba(245, 245, 245, 0.89);
     z-index: 100;
+    display: flex;
+    justify-content: space-between;
 }
 
-header a {
+.header-menu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    font-size: 1rem;
+}
+
+.header-menu a {
+    display: block;
+    margin: 0 1em 0 1em;
+    color: #888888;
+}
+
+.header-menu button {
+    border: none;
+    margin: 0 0.5em 0 0.5em;
+    cursor: pointer;
+}
+
+.header-menu button:hover {
+    background:rgb(236, 211, 178);
+    border-radius: 5px;
+}
+
+.header-logo a {
     color: black;
 }
 
@@ -390,4 +425,20 @@ img {
     margin: auto;
     cursor: zoom-out;
     object-fit: contain;
+}
+
+#top-button {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    margin: 2rem;
+    width: 3rem;
+    font-size: 1.25rem;
+    text-align: center;
+    line-height: 3rem;
+    height: 3rem;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0 1px 10px rgba(0 0 0 / 20%);
+    cursor: pointer;
 }
