@@ -21,7 +21,7 @@
         <link rel="stylesheet" href="//fpg2012.github.io/sushi-theme-letter/assets/style/katex.min.css" integrity="sha384-MlJdn/WNKDGXveldHDdyRP1R4CTHr3FeuDNfhsLPYrq2t0UBkUdK2jyTnXPEK1NQ" crossorigin="anonymous">
 
         
-        <script defer src='//unpkg.com/valine/dist/Valine.min.js'></script>
+        <script defer src='//cdn.jsdelivr.net/npm/valine@1.4.18/dist/Valine.min.js'></script>
         
         
         <link rel="apple-touch-icon" sizes="180x180" href="//fpg2012.github.io/sushi-theme-letter/assets/favicon/apple-touch-icon.png">
@@ -185,13 +185,6 @@
 
 <div class="comment-area">
     <div defer id="vcomments"></div>
-    <script defer>
-        new Valine({
-            el: '#vcomments',
-            appId: 'z2BI9uqhDzhyed4haUSq5K98-gzGzoHsz',
-            appKey: '4R2vpq8Wy392JAroRiaL7MJY'
-        })
-    </script>
 </div>
 
 </div>
@@ -262,5 +255,14 @@
             }
         });
     </script>
+    
+    <script defer>
+        new Valine({
+            el: '#vcomments',
+            appId: 'z2BI9uqhDzhyed4haUSq5K98-gzGzoHsz',
+            appKey: '4R2vpq8Wy392JAroRiaL7MJY'
+        })
+    </script>
+    
     </body>
 </html>
