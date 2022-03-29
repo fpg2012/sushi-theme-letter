@@ -49,13 +49,6 @@ layout: page
 {% if site.valine and page.comment %}
 <div class="comment-area">
     <div defer id="vcomments"></div>
-    <script defer>
-        new Valine({
-            el: '#vcomments',
-            appId: '{{ site.valine.appid }}',
-            appKey: '{{ site.valine.appkey }}'
-        })
-    </script>
 </div>
 {% endif %}
 </div>
