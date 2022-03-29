@@ -1,7 +1,7 @@
 site_name: "Letter"
 author: "nth233"
-# url: "//fpg2012.github.io/sushi-theme-letter"
-url: "//localhost:5000"
+url: "//fpg2012.github.io/sushi-theme-letter"
+# url: "//localhost:5000"
 
 favicon: "/assets/favicon"
 
