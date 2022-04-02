@@ -26,7 +26,7 @@
         <link rel="stylesheet" href="{{ "/assets/style/tango.css" | prepend: site.url }}">
         {% include "katexcss" %}
         {% if site.valine and page.comment %}
-        <script defer src='//cdn.jsdelivr.net/npm/valine@1.4.18/dist/Valine.min.js'></script>
+        <script async src='//cdn.jsdelivr.net/npm/valine@1.4.18/dist/Valine.min.js'></script>
         {% endif %}
         {% if site.favicon %}
         <link rel="apple-touch-icon" sizes="180x180" href="{{ site.favicon | prepend: site.url }}/apple-touch-icon.png">
@@ -104,12 +104,14 @@
         });
     </script>
     {% if site.valine and page.comment %}
-    <script defer>
-        new Valine({
-            el: '#vcomments',
-            appId: '{{ site.valine.appid }}',
-            appKey: '{{ site.valine.appkey }}'
-        })
+    <script>
+        window.addEventListener('load', (event) => {
+            new Valine({
+                el: '#vcomments',
+                appId: '{{ site.valine.appid }}',
+                appKey: '{{ site.valine.appkey }}'
+            });
+        });
     </script>
     {% endif %}
     </body>
